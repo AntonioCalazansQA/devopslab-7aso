@@ -9,7 +9,7 @@ csrf = CSRFProtect(app)
 def pagina_inicial():
     return "Um QA no multiverso de Devops!"
 
-@app.rout('/bug')
+@app.route('/bug')
 def bad():
     try:
         raise TypeError()
