@@ -25,7 +25,7 @@ jobs:
         run:  pip install flask
 
       - name: Install Requirements
-        run:  pip install flask flask-wtf
+        run:  pip install flask flask-wtf pytest pytest-cov
 
       - name: Running pytest
         run: coverage run --source=app -m pytest test.py && coverage report -m && coverage xml -i         
